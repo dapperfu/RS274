@@ -28,3 +28,12 @@ submodules:
 .PHONY: nb
 nb:
 	${VENV}/bin/jupyter-notebook
+
+.PHONY: commit
+commit:
+	${VENV}/bin/doorstop publish all public/
+	git commit -a
+
+.PHONY: clean
+clean:
+	git clean -fd
