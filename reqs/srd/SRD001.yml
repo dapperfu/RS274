@@ -6,4 +6,4 @@ normative: true
 ref: ''
 reviewed: null
 text: |
-  GCode line **shall** start with **G** or **M** function.
+  GCode line **shall** start with a **G**, **M**, or **T** command.
